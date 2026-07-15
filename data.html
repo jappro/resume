@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Uche Japheth | Junior Data Analyst Resume</title>
+<meta name="title" content="Uche Japheth | Junior Data Analyst Resume">
+<meta name="description" content="Junior Data Analyst with hands-on experience in Excel, Google Sheets, data cleaning, reporting, and AI-assisted analysis.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://resume-pied-five.vercel.app/data">
+<meta property="og:title" content="Uche Japheth | Junior Data Analyst Resume">
+<meta property="og:description" content="Junior Data Analyst with hands-on experience in Excel, Google Sheets, data cleaning, reporting, and AI-assisted analysis.">
+<meta property="og:image" content="https://resume-pied-five.vercel.app/og-image-data.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Uche Japheth - Junior Data Analyst Resume">
+<meta property="og:site_name" content="Uche Japheth Resume">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://resume-pied-five.vercel.app/data">
+<meta name="twitter:title" content="Uche Japheth | Junior Data Analyst Resume">
+<meta name="twitter:description" content="Junior Data Analyst with hands-on experience in Excel, Google Sheets, data cleaning, reporting, and AI-assisted analysis.">
+<meta name="twitter:image" content="https://resume-pied-five.vercel.app/src/og-image-data.jpg">
+
+<link rel="canonical" href="https://resume-pied-five.vercel.app/data">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f5f7f6;
+    --panel:#ffffff;
+    --line:#e2e8e6;
+    --line-soft:#eef2f1;
+    --bar-dark:#0a1f1c;
+    --teal-dark:#0d332f;
+    --teal-mid:#128f7c;
+    --teal-mid-2:#17a892;
+    --teal-light-bg:#e3f2ef;
+    --teal-glow:rgba(18,143,124,0.18);
+    --text-hi:#15221f;
+    --text-mid:#4c5c59;
+    --text-lo:#8b9793;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html,body{
+    background:var(--bg);
+    color:var(--text-hi);
+    font-family:'Inter', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .page{
+    max-width:1180px;
+    margin:0 auto;
+    background:var(--panel);
+    position:relative;
+    box-shadow:0 0 0 1px var(--line-soft);
+  }
+
+  .top-bar{ height:10px; background:var(--bar-dark); }
+
+  /* ============ FLOATING DOWNLOAD PILL ============ */
+  .dl-pill-wrap{
+    position:sticky;
+    top:14px;
+    z-index:50;
+    display:flex;
+    justify-content:center;
+    margin-bottom:-24px;
+    pointer-events:none;
+  }
+
+  .dl-pill{
+    pointer-events:auto;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    max-width:300px;
+    width:88%;
+    padding:10px 18px;
+    border-radius:999px;
+    background:linear-gradient(135deg, var(--bar-dark), var(--teal-mid-2));
+    box-shadow:0 8px 24px rgba(10,31,28,0.28), 0 0 0 4px rgba(255,255,255,0.9);
+    text-decoration:none;
+    animation:pillFloat 3s ease-in-out infinite;
+  }
+
+  @keyframes pillFloat{
+    0%,100%{ transform:translateY(0); }
+    50%{ transform:translateY(-4px); }
+  }
+
+  .dl-pill .dl-icon{
+    flex-shrink:0;
+    width:22px; height:22px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.18);
+    display:flex; align-items:center; justify-content:center;
+  }
+
+  .dl-pill .dl-icon svg{ width:12px; height:12px; color:#fff; }
+
+  .dl-marquee{
+    flex:1;
+    overflow:hidden;
+    white-space:nowrap;
+    position:relative;
+    mask-image:linear-gradient(90deg, transparent 0, #000 12px, #000 88%, transparent 100%);
+    -webkit-mask-image:linear-gradient(90deg, transparent 0, #000 12px, #000 88%, transparent 100%);
+  }
+
+  .dl-marquee-track{
+    display:inline-flex;
+    gap:36px;
+    animation:marquee 7s linear infinite;
+  }
+
+  .dl-marquee-track span{
+    font-size:12.5px;
+    font-weight:600;
+    color:#fff;
+    letter-spacing:0.02em;
+  }
+
+  @keyframes marquee{
+    0%{ transform:translateX(0); }
+    100%{ transform:translateX(-50%); }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .dl-pill{ animation:none; }
+    .dl-marquee-track{ animation:none; }
+  }
+
+  /* ============ HEADER ============ */
+  header.hero{
+    padding:44px 54px 26px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:40px;
+  }
+
+  .hero-text{ flex:1; min-width:0; }
+
+  .name{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700;
+    font-size:52px;
+    letter-spacing:0.5px;
+    line-height:1;
+    color:var(--teal-dark);
+    margin-bottom:12px;
+  }
+
+  .role-title{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700;
+    font-size:22px;
+    color:var(--teal-mid);
+    margin-bottom:14px;
+  }
+
+  .skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:9px;
+    font-size:13.5px;
+    color:var(--text-mid);
+    margin-bottom:14px;
+  }
+
+  .skill-tags .dot{ color:var(--teal-mid); }
+
+  .accent-line{
+    width:46px;
+    height:3px;
+    background:var(--teal-mid-2);
+    border-radius:2px;
+    margin-bottom:16px;
+  }
+
+  .tagline{
+    font-size:15px;
+    line-height:1.6;
+    color:var(--text-hi);
+    max-width:560px;
+  }
+
+  .photo-wrap{
+    flex-shrink:0;
+    width:210px;
+    height:248px;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(10,31,28,0.18);
+    border:1px solid var(--line);
+  }
+
+  .photo-wrap img{
+    width:100%; height:100%;
+    object-fit:cover;
+    display:block;
+  }
+
+  .contact-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:26px;
+    padding:22px 54px 26px;
+    border-top:1px solid var(--line);
+    margin:0 54px;
+  }
+
+  .contact-item{
+    display:flex;
+    align-items:center;
+    gap:9px;
+    font-size:13.5px;
+    color:var(--text-mid);
+    text-decoration:none;
+  }
+
+  .contact-item:hover{ color:var(--teal-mid); }
+
+  .contact-item .ic-badge{
+    width:26px; height:26px;
+    border-radius:50%;
+    background:var(--teal-mid);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+
+  .contact-item .ic-badge svg{ width:13px; height:13px; color:#fff; }
+
+  /* ============ GRID CONTENT ============ */
+  .content-grid{
+    display:grid;
+    grid-template-columns:1.7fr 1fr;
+    grid-template-areas:
+      "summary toolkit"
+      "experience toolkit"
+      "experience strengths"
+      "projects education"
+      "projects portfolio";
+    gap:8px 44px;
+    padding:8px 54px 60px;
+  }
+
+  .col-divider{ display:none; }
+
+  @media (min-width:1024px){
+    .content-grid{
+      grid-template-columns:1.7fr 1px 1fr;
+      grid-template-areas:
+        "summary divider toolkit"
+        "experience divider toolkit"
+        "experience divider strengths"
+        "projects divider education"
+        "projects divider portfolio";
+      gap:8px 22px;
+    }
+    .col-divider{
+      display:block;
+      grid-area:divider;
+      background:var(--line);
+      width:1px;
+      height:100%;
+    }
+  }
+
+  .area-summary{ grid-area:summary; }
+  .area-experience{ grid-area:experience; }
+  .area-projects{ grid-area:projects; }
+  .area-toolkit{ grid-area:toolkit; }
+  .area-strengths{ grid-area:strengths; }
+  .area-education{ grid-area:education; }
+  .area-portfolio{ grid-area:portfolio; }
+
+  .content-grid > section{ margin-bottom:32px; }
+  .content-grid > .area-experience,
+  .content-grid > .area-toolkit{ margin-bottom:32px; }
+
+  .section-head{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:14px;
+  }
+
+  .section-head .icon-badge{
+    width:30px; height:30px;
+    border-radius:9px;
+    background:var(--teal-light-bg);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+
+  .section-head .icon-badge svg{ width:15px; height:15px; color:var(--teal-mid); }
+
+  .section-head h2{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--teal-dark);
+  }
+
+  /* ---- Summary ---- */
+  .summary-text{
+    font-size:13.8px;
+    line-height:1.7;
+    color:var(--text-mid);
+    margin-bottom:12px;
+  }
+  .summary-text:last-child{ margin-bottom:0; }
+
+  /* ---- Experience ---- */
+  .exp-item{
+    padding-left:26px;
+    position:relative;
+    margin-bottom:26px;
+  }
+
+  .exp-item:last-child{ margin-bottom:0; }
+
+  .exp-item::before{
+    content:'';
+    position:absolute;
+    left:0; top:5px;
+    width:9px; height:9px;
+    border-radius:50%;
+    background:var(--teal-mid);
+    box-shadow:0 0 0 4px var(--teal-glow);
+  }
+
+  .exp-item::after{
+    content:'';
+    position:absolute;
+    left:4px; top:18px;
+    bottom:-26px;
+    width:1px;
+    background:linear-gradient(180deg, var(--line), transparent);
+  }
+
+  .exp-item:last-child::after{ display:none; }
+
+  .exp-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:14px;
+    margin-bottom:2px;
+  }
+
+  .exp-title{
+    font-size:15px;
+    font-weight:700;
+    color:var(--teal-dark);
+  }
+
+  .exp-date{
+    font-size:11.5px;
+    font-weight:600;
+    color:var(--teal-mid);
+    white-space:nowrap;
+    flex-shrink:0;
+  }
+
+  .exp-org{
+    font-size:13px;
+    font-weight:600;
+    color:var(--teal-mid);
+    margin-bottom:9px;
+  }
+
+  .exp-list{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+  }
+
+  .exp-list li{
+    font-size:13px;
+    line-height:1.6;
+    color:var(--text-mid);
+    padding-left:14px;
+    position:relative;
+  }
+
+  .exp-list li::before{
+    content:'';
+    position:absolute;
+    left:0; top:7px;
+    width:4px; height:4px;
+    border-radius:50%;
+    background:var(--teal-mid-2);
+  }
+
+  /* ---- Projects ---- */
+  .proj-title{
+    font-size:14.5px;
+    font-weight:700;
+    color:var(--teal-dark);
+    margin-bottom:8px;
+  }
+
+  .proj-desc{
+    font-size:13px;
+    line-height:1.65;
+    color:var(--text-mid);
+    margin-bottom:10px;
+  }
+
+  .proj-list{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    margin-bottom:12px;
+  }
+
+  .proj-list li{
+    font-size:12.8px;
+    line-height:1.6;
+    color:var(--text-mid);
+    padding-left:14px;
+    position:relative;
+  }
+
+  .proj-list li::before{
+    content:'';
+    position:absolute;
+    left:0; top:7px;
+    width:4px; height:4px;
+    border-radius:50%;
+    background:var(--teal-mid-2);
+  }
+
+  .proj-tools{
+    font-size:12.3px;
+    color:var(--text-mid);
+    line-height:1.6;
+  }
+
+  .proj-tools strong{
+    color:var(--teal-dark);
+    font-weight:700;
+  }
+
+  /* ---- Analytics Toolkit ---- */
+  .toolkit-list{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+  }
+
+  .toolkit-list li{
+    font-size:12.8px;
+    color:var(--text-mid);
+    padding-left:14px;
+    position:relative;
+  }
+
+  .toolkit-list li::before{
+    content:'';
+    position:absolute;
+    left:0; top:6px;
+    width:4px; height:4px;
+    border-radius:50%;
+    background:var(--teal-mid-2);
+  }
+
+  /* ---- Analytical Strengths ---- */
+  .strength-list{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+  }
+
+  .strength-list li{
+    display:flex;
+    align-items:flex-start;
+    gap:8px;
+    font-size:12.8px;
+    line-height:1.4;
+    color:var(--text-mid);
+  }
+
+  .strength-check{
+    width:15px; height:15px;
+    flex-shrink:0;
+    color:var(--teal-mid);
+    margin-top:1px;
+  }
+
+  /* ---- Education ---- */
+  .edu-title{
+    font-size:14px;
+    font-weight:700;
+    color:var(--teal-dark);
+    margin-bottom:4px;
+  }
+
+  .edu-school{
+    font-size:12.5px;
+    color:var(--teal-mid);
+    font-weight:600;
+    margin-bottom:4px;
+  }
+
+  .edu-date{
+    font-size:12px;
+    color:var(--text-lo);
+  }
+
+  /* ---- Portfolio & Links ---- */
+  .portfolio-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .portfolio-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:12.8px;
+  }
+
+  .port-ic{
+    width:24px; height:24px;
+    border-radius:7px;
+    background:var(--teal-light-bg);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+
+  .port-ic svg{ width:13px; height:13px; color:var(--teal-mid); }
+  .port-ic.dark-bg{ background:#0B0B0B; padding:4px; }
+  .port-ic.dark-bg svg{ width:100%; height:100%; color:#fff; }
+
+  .port-label{ font-weight:700; color:var(--text-hi); flex-shrink:0; }
+
+  .port-value{
+    color:var(--teal-mid);
+    text-decoration:none;
+    word-break:break-word;
+  }
+
+  .port-value:hover{ text-decoration:underline; }
+
+  /* ============ FOOTER ============ */
+  .footer-bar{
+    background:var(--bar-dark);
+    padding:14px 24px;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+  }
+
+  .footer-bar .dash{
+    width:20px; height:1px;
+    background:rgba(255,255,255,0.4);
+  }
+
+  .footer-bar span{
+    font-size:11.5px;
+    color:rgba(255,255,255,0.85);
+    letter-spacing:0.03em;
+  }
+
+  .footer-bar b{ color:var(--teal-mid-2); font-weight:600; }
+
+  /* ============ MOBILE TOAST ============ */
+  .view-toast{
+    position:fixed;
+    left:50%;
+    bottom:22px;
+    transform:translate(-50%, 20px);
+    width:calc(100% - 40px);
+    max-width:360px;
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    padding:14px 16px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:#ffffff;
+    box-shadow:0 10px 30px rgba(10,31,28,0.18);
+    z-index:999;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .45s ease, transform .45s ease;
+  }
+
+  .view-toast.show{
+    opacity:1;
+    transform:translate(-50%, 0);
+    pointer-events:auto;
+  }
+
+  .view-toast .toast-face{
+    width:34px; height:34px;
+    border-radius:50%;
+    flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(135deg, var(--bar-dark), var(--teal-mid-2));
+  }
+
+  .view-toast .toast-face svg{ width:18px; height:18px; color:#fff; }
+
+  .view-toast .toast-body{ flex:1; }
+
+  .view-toast .toast-title{
+    font-family:'Space Grotesk', sans-serif;
+    font-size:12.5px;
+    font-weight:700;
+    color:var(--teal-dark);
+    margin-bottom:3px;
+  }
+
+  .view-toast .toast-msg{
+    font-size:12px;
+    line-height:1.5;
+    color:var(--text-mid);
+  }
+
+  .view-toast .toast-close{
+    background:none;
+    border:none;
+    color:var(--text-lo);
+    font-size:16px;
+    line-height:1;
+    cursor:pointer;
+    padding:2px 4px;
+    flex-shrink:0;
+  }
+
+  @media (min-width:861px){
+    .view-toast{ display:none; }
+  }
+
+  /* =======================================================
+     TABLET (861px – 1023px)
+     ======================================================= */
+  @media (max-width:1023px) and (min-width:861px){
+    header.hero{ padding:36px 34px 22px; gap:26px; }
+    .contact-row{ padding:20px 34px 24px; margin:0 34px; }
+    .content-grid{ padding:8px 34px 50px; gap:8px 30px; grid-template-columns:1.6fr 1fr; }
+    .photo-wrap{ width:150px; height:177px; }
+    .name{ font-size:42px; }
+  }
+
+  /* =======================================================
+     MOBILE (≤860px)
+     ======================================================= */
+  @media (max-width:860px){
+
+    .dl-pill-wrap{ margin-bottom:-20px; }
+    .dl-pill{ max-width:280px; }
+
+    header.hero{
+      flex-direction:column-reverse;
+      align-items:center;
+      text-align:center;
+      padding:32px 24px 24px;
+      gap:20px;
+    }
+
+    .photo-wrap{ width:150px; height:178px; }
+
+    .hero-text{ width:100%; display:flex; flex-direction:column; align-items:center; }
+
+    .name{ font-size:32px; }
+    .role-title{ font-size:17px; }
+    .skill-tags{ justify-content:center; }
+    .accent-line{ margin-left:auto; margin-right:auto; }
+    .tagline{ margin:0 auto; }
+
+    .contact-row{ justify-content:center; margin:0 24px; padding:20px 24px 22px; }
+
+    .content-grid{
+      display:flex;
+      flex-direction:column;
+      padding:8px 24px 50px;
+      gap:0;
+    }
+
+    .content-grid > section{
+      width:100%;
+      text-align:center;
+      margin-bottom:30px !important;
+    }
+
+    .area-summary{ order:1; }
+    .area-toolkit{ order:2; }
+    .area-experience{ order:3; }
+    .area-projects{ order:4; }
+    .area-strengths{ order:5; }
+    .area-education{ order:6; }
+    .area-portfolio{ order:7; margin-bottom:0 !important; }
+
+    .section-head{ justify-content:center; }
+
+    .exp-item{ padding-left:0; text-align:center; }
+    .exp-item::before, .exp-item::after{ display:none; }
+    .exp-top{ flex-direction:column; align-items:center; gap:6px; }
+    .exp-list{ align-items:center; }
+    .exp-list li{ padding-left:0; text-align:left; max-width:380px; }
+    .exp-list li::before{ display:none; }
+
+    .proj-list{ align-items:center; }
+    .proj-list li{ padding-left:0; text-align:left; max-width:380px; }
+    .proj-list li::before{ display:none; }
+
+    .toolkit-list{ align-items:center; max-width:320px; margin:0 auto; }
+    .toolkit-list li{ padding-left:0; text-align:left; }
+    .toolkit-list li::before{ display:none; }
+
+    .strength-list{ align-items:center; max-width:320px; margin:0 auto; }
+
+    .portfolio-list{ align-items:center; }
+    .portfolio-row{ justify-content:center; flex-wrap:wrap; }
+
+    .footer-bar{ flex-wrap:wrap; }
+  }
+</style>
+</head>
+<body>
+
+<div class="dl-pill-wrap">
+  <a class="dl-pill" href="src/data-resume-v1-0.pdf" target="_blank" rel="noopener" download aria-label="Download PDF resume">
+    <span class="dl-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+    </span>
+    <span class="dl-marquee">
+      <span class="dl-marquee-track">
+        <span>Click here to download PDF file for this resume</span>
+        <span>Click here to download PDF file for this resume</span>
+      </span>
+    </span>
+  </a>
+</div>
+
+<div class="page">
+  <div class="top-bar"></div>
+
+  <header class="hero">
+    <div class="hero-text">
+      <h1 class="name">UCHE JAPHETH</h1>
+      <div class="role-title">Junior Data Analyst</div>
+      <div class="skill-tags">
+        <span>Excel</span><span class="dot">•</span>
+        <span>Google Sheets</span><span class="dot">•</span>
+        <span>Data Cleaning</span><span class="dot">•</span>
+        <span>Reporting</span><span class="dot">•</span>
+        <span>AI-Assisted Analysis</span>
+      </div>
+      <div class="accent-line"></div>
+      <p class="tagline">Turning raw data into structured insights that support smarter business decisions, streamlined operations, and measurable growth.</p>
+    </div>
+
+    <div class="photo-wrap">
+      <img src="src/data-hpf.jpg" alt="Uche Japheth">
+    </div>
+  </header>
+
+  <div class="contact-row">
+    <a class="contact-item" href="mailto:camzyxworld@gmail.com"><span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span>camzyxworld@gmail.com</a>
+    <a class="contact-item" href="tel:+2349153661595"><span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h3l1.5 4.5L8 9.5a12 12 0 0 0 6.5 6.5l2-2.5L21 15v3a2 2 0 0 1-2 2C11 20 4 13 4 5a2 2 0 0 1 2-2Z"/></svg></span>+234 915 366 1595</a>
+    <span class="contact-item"><span class="ic-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.3"/></svg></span>Lagos, Nigeria</span>
+    <a class="contact-item" href="https://linkedin.com/in/jappr0" target="_blank" rel="noopener"><span class="ic-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12M7.11 20.45H3.56V9h3.55z"/></svg></span>linkedin.com/in/jappr0</a>
+  </div>
+
+  <div class="content-grid">
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section class="area-summary">
+      <div class="section-head">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.2"/><path d="M5.5 20c0-3.6 3-6 6.5-6s6.5 2.4 6.5 6"/></svg></div>
+        <h2>Professional Summary</h2>
+      </div>
+      <p class="summary-text">Detail-oriented Junior Data Analyst with hands-on experience supporting procurement, business operations, and digital projects through data organization, spreadsheet analysis, reporting, and workflow optimization. Experienced in Microsoft Excel, Google Sheets, AI-powered productivity tools, and business documentation to improve operational efficiency and decision-making.</p>
+      <p class="summary-text">Able to transform unstructured information into organized datasets, build reports and dashboards, maintain accurate records, and identify opportunities for process improvement. Combines analytical thinking with operational experience across procurement, community operations, and digital business management.</p>
+    </section>
+
+    <div class="col-divider"></div>
+
+    <!-- ANALYTICS TOOLKIT -->
+    <section class="area-toolkit">
+      <div class="section-head">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg></div>
+        <h2>Analytics Toolkit</h2>
+      </div>
+      <ul class="toolkit-list">
+        <li>Microsoft Excel</li>
+        <li>Google Sheets</li>
+        <li>Pivot Tables</li>
+        <li>XLOOKUP</li>
+        <li>VLOOKUP</li>
+        <li>INDEX &amp; MATCH</li>
+        <li>Conditional Formatting</li>
+        <li>Data Validation</li>
+        <li>Data Cleaning</li>
+        <li>Charts &amp; Dashboards</li>
+        <li>Google Workspace</li>
+        <li>Microsoft Office</li>
+        <li>ChatGPT</li>
+        <li>Claude AI</li>
+        <li>Gemini</li>
+        <li>GitHub</li>
+      </ul>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section class="area-experience">
+      <div class="section-head">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg></div>
+        <h2>Professional Experience</h2>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-top">
+          <div class="exp-title">Executive Assistant / Junior Data Analyst</div>
+          <div class="exp-date">Apr 2025 – Present</div>
+        </div>
+        <div class="exp-org">Racine Technologies Limited — Lagos, Nigeria</div>
+        <ul class="exp-list">
+          <li>Organize and maintain procurement records, supplier databases, and inventory information using Microsoft Excel.</li>
+          <li>Clean, validate, and structure operational data to improve reporting accuracy.</li>
+          <li>Prepare procurement summaries, pricing comparisons, and inventory reports for management.</li>
+          <li>Build Excel spreadsheets for tracking purchases, deliveries, supplier performance, and stock movement.</li>
+          <li>Support budgeting and cost analysis by organizing business data into actionable reports.</li>
+          <li>Maintain documentation standards through data validation, deduplication, and structured record keeping.</li>
+          <li>Collaborate across departments to improve operational workflows and information management.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-top">
+          <div class="exp-title">Community Operations &amp; Data Support</div>
+          <div class="exp-date">Jun 2025 – Aug 2025</div>
+        </div>
+        <div class="exp-org">Pecunity (formerly OctoDeFi)</div>
+        <ul class="exp-list">
+          <li>Maintained campaign records and community activity data across multiple platforms.</li>
+          <li>Organized engagement information for reporting and campaign evaluation.</li>
+          <li>Coordinated Discord and Telegram announcements while ensuring communication accuracy.</li>
+          <li>Assisted with operational tracking and documentation during marketing campaigns.</li>
+          <li>Supported data organization for community growth initiatives and campaign execution.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-top">
+          <div class="exp-title">Community Operations Support</div>
+          <div class="exp-date">Mar 2026 – Present</div>
+        </div>
+        <div class="exp-org">Kiooverse</div>
+        <ul class="exp-list">
+          <li>Organized player feedback and community insights for the development team.</li>
+          <li>Collected gameplay observations to support product improvements.</li>
+          <li>Assisted with reporting trends from community discussions.</li>
+          <li>Coordinated operational workflows between community and project teams.</li>
+          <li>Supported live game events through structured documentation and reporting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ANALYTICAL STRENGTHS -->
+    <section class="area-strengths">
+      <div class="section-head">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg></div>
+        <h2>Analytical Strengths</h2>
+      </div>
+      <ul class="strength-list">
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Data Cleaning &amp; Preparation</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Spreadsheet Analysis</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Business Reporting</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Procurement Analysis</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Data Entry &amp; Documentation</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Dashboard Preparation</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Process Improvement</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Research &amp; Information Gathering</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Record Management</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Inventory Tracking</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Operational Analysis</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>AI-Assisted Productivity</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Attention to Detail</li>
+        <li><svg class="strength-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.3 2.3L16 10"/></svg>Problem Solving</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="area-projects">
+      <div class="section-head">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></svg></div>
+        <h2>Projects</h2>
+      </div>
+      <div class="proj-title">Vinceslink — E-commerce &amp; Business Operations Platform</div>
+      <p class="proj-desc">Designed and currently managing a digital commerce platform that combines inventory organization, operational workflows, and search visibility optimization.</p>
+      <ul class="proj-list">
+        <li>Structured and organized product datasets using spreadsheets.</li>
+        <li>Managed inventory information and product categorization.</li>
+        <li>Built pricing and inventory tracking systems.</li>
+        <li>Automated on-page SEO workflows to improve Google search visibility.</li>
+        <li>Organized business information for easier reporting and future analytics.</li>
+        <li>Optimized website structure to improve customer navigation and conversions.</li>
+      </ul>
+      <div class="proj-tools"><strong>Tools:</strong> Microsoft Excel • Google Sheets • GitHub • AI Automation • SEO • HTML • CSS • JavaScript</div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="area-education">
+      <div class="section-head">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 9 12 4l10 5-10 5-10-5Z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg></div>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-title">B.Eng. Petroleum Engineering</div>
+      <div class="edu-school">Nnamdi Azikiwe University, Awka</div>
+      <div class="edu-date">Expected Graduation: 2028</div>
+    </section>
+
+    <!-- PORTFOLIO & LINKS -->
+    <section class="area-portfolio">
+      <div class="section-head">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 15 15 9M11 6l1-1a4 4 0 0 1 5.7 5.7l-1 1M13 18l-1 1a4 4 0 0 1-5.7-5.7l1-1"/></svg></div>
+        <h2>Portfolio &amp; Links</h2>
+      </div>
+      <div class="portfolio-list">
+        <div class="portfolio-row">
+          <span class="port-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18Z"/></svg></span>
+          <span class="port-label">Portfolio:</span>
+          <a class="port-value" href="https://jappro.github.io/portfolio/" target="_blank" rel="noopener">jappro.github.io/portfolio</a>
+        </div>
+        <div class="portfolio-row">
+          <span class="port-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></span>
+          <span class="port-label">Resume Website:</span>
+          <a class="port-value" href="https://resume-pied-five.vercel.app" target="_blank" rel="noopener">resume-pied-five.vercel.app</a>
+        </div>
+        <div class="portfolio-row">
+          <span class="port-ic"><svg viewBox="0 0 1024 1024"><path fill="#1b1f23" fill-rule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 417.92 350.08 485.76 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36-128.64 23.68-161.92-31.36-172.16-60.16-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-33.28-.64-33.92 40.32-.64 69.12 37.12 78.72 52.48 46.08 77.44 119.68 55.68 149.12 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-232.96-56.96-232.96-252.8 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 196.48-119.68 240-233.6 252.8 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 929.92 1024 737.92 1024 512 1024 229.12 794.88 0 512 0" clip-rule="evenodd"/></svg></span>
+          <span class="port-label">GitHub:</span>
+          <a class="port-value" href="https://github.com/jappro" target="_blank" rel="noopener">github.com/jappro</a>
+        </div>
+        <div class="portfolio-row">
+          <span class="port-ic"><svg viewBox="0 0 24 24" fill="currentColor" style="color:#0A66C2"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12M7.11 20.45H3.56V9h3.55z"/></svg></span>
+          <span class="port-label">LinkedIn:</span>
+          <a class="port-value" href="https://linkedin.com/in/jappr0" target="_blank" rel="noopener">linkedin.com/in/jappr0</a>
+        </div>
+        <div class="portfolio-row">
+          <span class="port-ic dark-bg"><svg viewBox="0 0 1200 1227"><path fill="#fff" d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"/></svg></span>
+          <span class="port-label">X (Twitter):</span>
+          <a class="port-value" href="https://x.com/jappr0" target="_blank" rel="noopener">x.com/jappr0</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="footer-bar">
+    <span class="dash"></span>
+    <span>Resume Series &nbsp;|&nbsp; <b>Junior Data Analyst</b> &nbsp;|&nbsp; v1.0</span>
+  </div>
+</div>
+
+<div class="view-toast" id="viewToast">
+  <div class="toast-face">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M8.5 10.2h.01M15.5 10.2h.01"/>
+      <path d="M8 14.2c1 1.3 2.4 2 4 2s3-.7 4-2"/>
+    </svg>
+  </div>
+  <div class="toast-body">
+    <div class="toast-title">Quick tip</div>
+    <div class="toast-msg">For the best experience, please view this resume on a desktop screen.</div>
+  </div>
+  <button class="toast-close" id="toastClose" aria-label="Dismiss">×</button>
+</div>
+
+<script>
+  (function(){
+    var toast = document.getElementById('viewToast');
+    var closeBtn = document.getElementById('toastClose');
+    var isMobile = window.matchMedia('(max-width: 860px)').matches;
+
+    if (isMobile && toast) {
+      var showTimer = setTimeout(function(){
+        toast.classList.add('show');
+      }, 700);
+
+      var hideTimer = setTimeout(function(){
+        toast.classList.remove('show');
+      }, 7000);
+
+      closeBtn.addEventListener('click', function(){
+        toast.classList.remove('show');
+        clearTimeout(showTimer);
+        clearTimeout(hideTimer);
+      });
+    }
+  })();
+</script>
+</body>
+</html>
